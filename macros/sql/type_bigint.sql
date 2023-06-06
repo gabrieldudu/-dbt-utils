@@ -1,3 +1,3 @@
 {%- macro type_bigint() -%}
-  {{ adapter.dispatch('type_bigint', packages = ['dbt_utils'])() }}
+  {{ adapter.dispatch('type_bigint', 'dbt_utils')() }}
 {%- endmacro -%}
